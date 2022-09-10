@@ -1,0 +1,99 @@
+.hero {
+    padding: 8rem 6rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    /* background-color: #0D0D2B; */
+}
+
+
+.hero--left {
+    width: 60%;
+}
+
+.hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: .3rem .4rem;
+    border-radius: 2rem;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hero-top h5 {
+    background-color: #F2F2F2;
+    padding: .3rem .5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero--left h2{
+    padding-top: 2rem;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.business {
+    padding: 2rem 0;
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 27rem;
+}
+
+.hero--right img {
+    width: 100%;
+    height: 20%;
+}
+
+@media screen and (max-width: 1150px) {
+    .hero--left h2{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .business {
+        font-weight: 300;
+        max-width: 20rem;
+    }
+
+    .hero--right img {
+        width: 90%;
+        height: 20%;
+    }
+
+    .hero-top {
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero--left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .business {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
+}

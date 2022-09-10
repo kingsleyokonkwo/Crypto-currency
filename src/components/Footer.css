@@ -1,0 +1,94 @@
+.footer {
+    padding: 6rem;
+}
+
+.footer--top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.FT-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.FT-h3 {
+    padding-bottom: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.list li {
+    padding-bottom: 1rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.FT-span {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.span-img {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 3rem;
+    width: 3rem;
+    padding: .5rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.footer--bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon--span {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icon {
+    color: #fafafa;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .footer--top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FT-logo {
+        padding-bottom: 2rem;
+    }
+
+    .FT-link {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .FT-span {
+        align-items: center;
+        gap: 0rem;
+        justify-content: space-between;
+    }
+
+    
+    .footer--bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+

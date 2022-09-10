@@ -1,13 +1,48 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root {
+  --background: #0D0D2B;
+  --text-primary: #ffffff;
+  --text-secondary:#000000;
+  --accent: #3671E9;
+  --calculator-color: #fafafa;
+  --market-background: #2B076E;
+  /* subscribe-background-#2B076E 100% #0D0D2B 100% */
+}
+
+body {
+  background: var(--background);
+}
+
+h1, li, p, h3, h2, h4, a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  padding: .7rem 1.4rem;
+  font-size: 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.02);
 }

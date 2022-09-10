@@ -1,0 +1,89 @@
+.cryptocurrency {
+    padding: 16rem 6rem 4rem;
+    background-color: var(--calculator-color);
+}
+
+.title {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.crypto--container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.4rem;
+}
+
+.crypto {
+    background-color: #2B076E;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.crypto--container :hover {
+    transform: scale(1.05);
+    transition: all .3s;
+}
+
+.crypto--full {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    padding-top: 2.5rem;
+    padding-bottom: 1.8rem;
+}
+
+.short {
+    font-size: .9rem;
+    color: silver;
+}
+
+.crypto--note {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .cryptocurrency {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .crypto--full {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .crypto--container {
+        grid-template-columns: 1fr;
+    }
+    
+    .title {
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cryptocurrency {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
+}
